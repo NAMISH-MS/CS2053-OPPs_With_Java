@@ -1,0 +1,4 @@
+1) Write a program in java to accept two numbers on command line and do the addition.
+2) Demonstrate the method overloading with suitable example.
+3) Take 3 parameters in command line and conactinate.
+4) Create a calculator accepting numbers from command line.
