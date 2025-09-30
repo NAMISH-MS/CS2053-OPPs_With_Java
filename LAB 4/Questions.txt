@@ -1,0 +1,21 @@
+1) Define a class A from Class A derive Class B from Class B derive Class C.
+
+        a)Each class Should have constructor.
+            Class A - Constructor()
+                Hello I'm A
+            Class B - Constructor()
+                Hello I'm B
+            Class C - Constructor()
+                Hello I'm C
+        
+        b) Create the Object of Class C.
+
+2) Write a class Class A in Class A write add (int a, int b) Function to add 2 integer and 
+derive this class and another function add add(double a, double b) double values and 
+Derive class B write one more class function add (string 1, string 2) to add concatinate two string, 
+and create the object of class B.
+
+3) Write a program in java to add and subtract complex numbers.
+    a)use Constructor Overloading
+    b)use Function Overloading
+    c)use Inheritance
