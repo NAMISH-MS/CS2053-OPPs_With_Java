@@ -1,0 +1,4 @@
+1. Find the sum of elements of upper diagonal, lower diagonal, and the diagonal elements of the matrix.
+2. Find the mid element of square matrix. One for odd matrix and one for even matrix.
+3. Implement Producer, Consumer problem using Thread in Java.
+4. Demonstrate Wrapper Class, Autoboxing and Auto-unboxing Concepts in Java.
