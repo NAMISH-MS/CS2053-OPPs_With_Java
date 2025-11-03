@@ -1,0 +1,26 @@
+Lab 1: Student List using ArrayList
+Create a Java program to manage a list of students using ArrayList. The program must allow:
+1. Adding student records
+2. Inserting a student at a specific index
+3. Updating a student’s name
+4. Removing a student by name or index
+5. Displaying the list after every action
+
+Lab 2: Music Playlist using LinkedList
+Create a menu-driven program using LinkedList to manage a playlist. The program must allow:
+1. Adding a song at the beginning or end
+2. Removing the first or last song
+3. Replacing a song at a given index
+4. Displaying the complete playlist
+
+Lab 3: Find IP Address using InetAddress
+Write a program that:
+1. Displays your computer’s IP address
+2. Accepts a domain name (example: www.google.com)
+3. Prints all IP addresses of that domain
+
+Lab 4: WHOIS Lookup using Socket Programming
+Write a client program that:
+1. Connects to whois.internic.net on port 43
+2. Sends a domain name entered by the user
+3. Displays WHOIS response
