@@ -20,8 +20,10 @@ public class MusicList {
             System.out.println("3. Remove first song.");
             System.out.println("4. Remove last song.");
             System.out.println("5. Replace song at given index.");
-            System.out.println("6.Display PlayList.");
-            System.out.println("7.Exit.");
+            System.out.println("6. Display PlayList.");
+            System.out.println("7. Play Next Song.");
+            System.out.println("8. Iterate through specific index.");
+            System.out.println("9. Exit.");
             System.out.println("Enter your choice: ");
             choice = sc.nextInt();
             sc.nextLine(); // Consume newline
@@ -45,6 +47,50 @@ public class MusicList {
                         System.out.println("Playlist is empty. No song to remove.");
                     }
                     break;
+                case 4:
+                    if(!playList.isEmpty()){
+                        playList.removeLast();
+                        System.out.println("Last song removed." + playList);
+                    }else{
+                        System.out.println("Playlist is empty. No song to remove.");
+                    }
+                    break;
+
+                case 5:
+                    System.out.println("Enter the index: ");
+                    int index = sc.nextInt();
+                    sc.nextLine(); // Consume newline
+                    if(index >= 0 && index < playList.size()){
+                        System.out.println("Enter the new song name: ");
+                        String newSong = sc.nextLine();
+                        playList.set(index, newSong);
+                        System.out.println("Song at index " + index + " replaced." + playList);
+                    }
+                    break;
+                case 6: 
+                    System.out.println("Complete Playlist: " + playList);
+                    break;
+                case 7:
+                    System.out.println("Playing Next Song.");
+                    Iterator<String> iterator = playList.iterator();
+                    while(iterator.hasNext()){
+                        System.out.println("Now Playing: " + iterator.next());
+                    }
+                    break;
+                case 8:
+                    System.out.println("Iterating through specific index.");
+                    System.out.println("Enter the index to iterate from: ");
+                    ListIterator<String> lit = playList.listIterator(2);
+                    while(lit.hasNext()){
+                        System.out.println("Song: " + lit.next());
+                    }
+                    break;  
+                case 9:
+                    System.out.println("Exiting the program.");
+                    System.exit(0);
+                    break;
+                default:
+                    System.out.println("Invalid choice. Please try again.");    
             }
 
         } while (true);
